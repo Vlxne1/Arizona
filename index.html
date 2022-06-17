@@ -23,14 +23,10 @@
                     audio.volume = 0.1;
                     audio.play()
                 }
-                function videoPlay() {
-                    var video = document.getElementById("video");
-                    video.play()
-                }
             </script>
             <input type="checkbox" autocomplete="off" id="overlay-toggle">
             <div class="overlay fullscreen">
-                <label for="overlay-toggle" onclick="audioPlay();videoPlay()">
+                <label for="overlay-toggle" onclick="audioPlay()">
                     <span class="no-hover" style="font-family: mono; font-size: 0.6em;">tap to enter</span>
                     <span class="hover" style="font-family: mono; font-size: 0.6em;">click to enter</span>
                 </label>
@@ -38,9 +34,6 @@
             <audio loop preload="auto" id="audio">
                 <source src="hellshell.mp3" type="audio/mp3">
             </source></audio>
-            <video muted loop playsinline preload="auto" class="fullscreen bg-video" id="video">
-                <source src="videoplayback.mp4" type="video/mp4">
-            </source></video>
 
             <section class="fullscreen text-content">
                 <h1 style="text-shadow: 0 0 0.40em #bababa;">Lunar</h1>
